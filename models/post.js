@@ -5,18 +5,21 @@ const Post = new Schema({
     type: String,
     required: true,
   },
-  body: {
+  content: {
     type: String,
     required: true,
   },
+  comments: [{
+    type: Schema.Types.ObjectId,
+    ref: 'comments'
+  }],
   timestamp: {
     type: Date,
     required: true,
   },
-  user: {
-    type: Schema.Types.ObjectId,
-    ref: 'User',
-    required: true,
+  published: {
+    type: Boolean,
+    required: true
   }
 });
 

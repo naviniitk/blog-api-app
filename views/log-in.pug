@@ -1,0 +1,14 @@
+extends layout 
+
+block content
+  form(action='' method='post')
+    fieldset 
+      .form-group 
+        label(for='username') Username 
+        input(placeholder='Enter Username' name='username' type='text')
+        br
+      .form-group 
+        label(for='password') Password
+        input(placeholder='Enter Password' name='password' type='password')
+        br
+      input(type='submit' value='Log In')

@@ -1,0 +1,26 @@
+extends layout 
+
+block content 
+  form(action='' method='post')
+    fieldset 
+      .form-group 
+        label(for='firstName') First Name 
+        input(placeholder='Enter First Name' name='firstName' type='text')
+        br
+      .form-group 
+        label(for='lastName') Last Name 
+        input(placeholder='Enter Last Name' name='lastName' type='text')
+        br
+      .form-group 
+        label(for='username') Username 
+        input(placeholder='Enter Username' name='username' type='text')
+        br
+      .form-group 
+        label(for='password') Password
+        input(placeholder='Enter Password' name='password' type='password')
+        br
+      .form-group 
+        label(for='confirmPassword') Confirm Password 
+        input(placeholder='Re-enter Password' name='confirmPassword' type='password')
+        br
+      input.btn(type="submit" value='Sign Up')
